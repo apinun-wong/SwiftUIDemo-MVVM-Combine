@@ -19,10 +19,8 @@ struct HomeView: View {
                     ForEach(viewModel.pokemonListItems) { item in
                         PokemonItemView()
                             .onTapGesture {
-                                withAnimation(.easeIn(duration: 0.2) {
-                                    print("Hello Tap Gesture \(item.id)")
-                                    didSelected(item: item)
-                                }
+                                print("Hello Tap Gesture \(item.id)")
+                                didSelected(item: item)
                             }
                     }
                 }
