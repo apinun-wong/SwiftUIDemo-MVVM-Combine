@@ -6,12 +6,15 @@
 //
 
 import SwiftUI
+import NavigationStack
 
 @main
 struct SwiftUIDemoMVVMApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationStackView(rootView: {
+                HomeView()
+            })
         }
     }
 }

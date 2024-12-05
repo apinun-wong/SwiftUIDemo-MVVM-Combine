@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		1C4C43B22D01862400186271 /* NavigationStack in Frameworks */ = {isa = PBXBuildFile; productRef = 1C4C43B12D01862400186271 /* NavigationStack */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		1C4C43812D0164EC00186271 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C4C43B22D01862400186271 /* NavigationStack in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +117,7 @@
 			);
 			name = SwiftUIDemoMVVM;
 			packageProductDependencies = (
+				1C4C43B12D01862400186271 /* NavigationStack */,
 			);
 			productName = SwiftUIDemoMVVM;
 			productReference = 1C4C43702D0164E900186271 /* SwiftUIDemoMVVM.app */;
@@ -195,6 +201,9 @@
 			);
 			mainGroup = 1C4C43672D0164E900186271;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				1C4C43B02D01862400186271 /* XCRemoteSwiftPackageReference "swiftui-navigation-stack" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 1C4C43712D0164E900186271 /* Products */;
 			projectDirPath = "";
@@ -558,6 +567,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1C4C43B02D01862400186271 /* XCRemoteSwiftPackageReference "swiftui-navigation-stack" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/matteopuc/swiftui-navigation-stack";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1C4C43B12D01862400186271 /* NavigationStack */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1C4C43B02D01862400186271 /* XCRemoteSwiftPackageReference "swiftui-navigation-stack" */;
+			productName = NavigationStack;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1C4C43682D0164E900186271 /* Project object */;
 }
